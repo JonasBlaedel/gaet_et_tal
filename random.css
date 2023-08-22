@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@300&family=Lilita+One&display=swap");
+
+h1 {
+  font-family: "Lilita One", cursive;
+  text-shadow: 0 0.25rem 0 #f48e06;
+  letter-spacing: 2px;
+  font-size: clamp(2rem, 1.6364rem + 1.4545vw, 3rem);
+}
+
+h3 {
+  font-family: "Lexend", sans-serif;
+  font-size: 1.2rem;
+  max-width: 65ch;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+#inputSection {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+#ditTal {
+  font-size: 1.2rem;
+  font-family: "Lexend", sans-serif;
+  max-width: 200px;
+}
+
+#inputButton {
+  font-size: 1.2rem;
+  border-width: 0;
+  border-radius: 5px;
+  width: 200px;
+  font-family: "Lexend", sans-serif;
+  color: white;
+  background-color: #f48e06;
+  cursor: pointer;
+}
+#inputButton:hover {
+  color: white;
+  background-color: #af6e1b;
+}
+
+#inputButton:active {
+  background-color: #f48e06;
+  box-shadow: 0 2.5px #666;
+  transform: translateY(2px);
+}
+
+#answer {
+  font-family: "Lexend", sans-serif;
+  font-size: 1.2rem;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+@keyframes lights {
+  0% {
+    color: #f48e06;
+    text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.2), 0 0 0.125em hsla(320, 100%, 60%, 0.3), -1em -0.125em 0.5em hsla(40, 100%, 60%, 0), 1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+  }
+
+  30% {
+    color: #e38810;
+    text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.5), 0 0 0.125em hsla(320, 100%, 60%, 0.5), -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2), 0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+  }
+
+  40% {
+    color: #c17c20;
+    text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.5), 0 0 0.125em hsla(320, 100%, 90%, 0.5), -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2), 0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
+  }
+
+  70% {
+    color: #9b6724;
+    text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.5), 0 0 0.125em hsla(320, 100%, 60%, 0.5), 0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2), -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+  }
+
+  100% {
+    color: #90642b;
+    text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.2), 0 0 0.125em hsla(320, 100%, 60%, 0.3), 1em -0.125em 0.5em hsla(40, 100%, 60%, 0), -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+  }
+}
+
+.winner {
+  margin: 2rem 0;
+  font-family: "Lilita One", cursive !important;
+  text-shadow: 0 0.25rem 0 #f48e06;
+  letter-spacing: 2px;
+  font-size: clamp(2rem, 1.6364rem + 1.4545vw, 3rem) !important;
+  animation: lights 5s linear infinite;
+  text-decoration: none !important;
+}
+
+.container {
+  text-align: center;
+}
